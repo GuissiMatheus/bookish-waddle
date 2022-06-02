@@ -1,0 +1,16 @@
+name: Verificar versão Ionic
+on: [push]
+jobs:
+  Verificar-Versao-Ionic:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fazer checkout
+        uses: actions/checkout@v3
+      - name: Configura o Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Instalar Ionic Global
+        run: npm install -g @ionic/cli
+      - name: Ver versão Ionic
+        run: ionic -info
