@@ -1,12 +1,12 @@
 name: Fluxo Qualquer
 on: [push]
 jobs:
-  Nome-Qualquer-Acao
+  Nome-Qualquer-Acao:
     runs-on: ubuntu-latest
-      steps:
-      - name: Checkout repositório
-        uses: actions/checkout@v3
-      - name: Mostrar mensagem "Hello World"
-        run: |
-          echo "Primeira mensagem"
-          echo "Hello World"
+    steps:
+    - name: Checkout repositório
+      uses: actions/checkout@v3
+    - name: Mostrar mensagem "Hello World"
+      run: |
+        echo "Primeira mensagem"
+        echo "Hello World"
