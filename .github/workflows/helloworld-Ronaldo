@@ -1,0 +1,12 @@
+name: Hello World
+
+on: [push]
+
+jobs:
+  Hello-World-do-Ronaldo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo Hello World
+      - name: Checkout repositório
+        uses: actions/checkout@v3
+      - run: echo ok...
